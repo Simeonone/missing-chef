@@ -1,6 +1,8 @@
 .recipe {
   background-color: $color-grey-light-1;
-
+  .paragraphTxtsmallscreen {
+    display: none;
+  }
   ///////////
   // FIGURE
   &__fig {
@@ -175,5 +177,19 @@
 
   &__publisher {
     font-weight: 700;
+  }
+}
+@media (max-width: 800px) {
+  .search-results {
+    display: none;
+  }
+  .recipe {
+    width: 100vh;
+    .paragraphTxt {
+      display: none;
+    }
+    .paragraphTxtsmallscreen {
+      display: inline-block;
+    }
   }
 }
